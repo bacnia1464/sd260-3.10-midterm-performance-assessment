@@ -1,0 +1,103 @@
+/*BOX MODEL PROPERTIES*/
+
+body {
+  /*Set overall background color and font*/
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  /*Remove default margin and padding from the body element*/
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  /*Max width of 960px and center using auto horizontal margins*/
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+section {
+  /*20px padding and white background to separate content*/
+  padding: 20px;
+  background-color: white;
+  /*Apply a light semi-transparent black box shadow*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /*Margin added for visual spacing below the nav*/
+  margin-top: 20px;
+}
+
+/*Center align header and footer text*/
+header, footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/*NAVIGATION MENU USING FLEXBOX)*/
+
+nav ul {
+  /*Use Flexbox to display horizontally and center across the page*/
+  display: flex;
+  justify-content: center;
+  /*Remove list bullets and extra padding*/
+  list-syle-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  /*Margin 0px top/bottom and 15px left/right*/
+  margin: 0 15px;
+}
+
+nav ul li a {
+  /*White text, #333 background and proper padding*/
+  color: white;
+  background-color: #333;
+  padding: 12px 20px;
+  /*Remove text underline and set as block elements*/
+  text-decoration: none;
+  display: block;
+  /*Round the corners of border*/
+  border-radius: 4px;
+  /*Transition duration for hover effect*/
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  /*Change background color on hover*/
+  background-color: #555;
+}
+
+/*PRODUCT TABLE: INCLUDING APPROPRIATE SEMANTIC HTML WITH STYLED COLUMNS AND SAMPLE DATA*/
+
+table {
+  /*Width 100% of container and remove spacing between cells*/
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+caption {
+  font-size: 1.25em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+th, td {
+  /*1px solid light gray border, 12px padding, left alignment*/
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  /*Header row background #444 and text color white*/
+  background-color: #444;
+  color: white;
+}
+
+tfoot td {
+  /*Center the footer content, apply italic style and top border*/
+  text-align: center;
+  font-style: italic;
+  border-top: 2px solid #ccc;
+}
